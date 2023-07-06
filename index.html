@@ -1,40 +1,114 @@
 <html>
+  <head>
+    <title>First Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<head>
-  <title>First Calculator</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
+  <body>
+    <h1>HTML, CSS, Javascript Calculator</h1>
+    <form>
+      <input type="button" id="clear" class="btn other" value="C" />
+      <input type="button" id="delete" class="btn other" value="D" />
+      <input type="text" id="display" />
+      <br />
+      <input
+        type="button"
+        class="btn number"
+        value="7"
+        onclick="get(this.value);"
+      />
+      <input
+        type="button"
+        class="btn number"
+        value="8"
+        onclick="get(this.value);"
+      />
+      <input
+        type="button"
+        class="btn number"
+        value="9"
+        onclick="get(this.value);"
+      />
+      <input
+        type="button"
+        class="btn operator"
+        value="+"
+        onclick="get(this.value);"
+      />
+      <br />
+      <input
+        type="button"
+        class="btn number"
+        value="4"
+        onclick="get(this.value);"
+      />
+      <input
+        type="button"
+        class="btn number"
+        value="5"
+        onclick="get(this.value);"
+      />
+      <input
+        type="button"
+        class="btn number"
+        value="6"
+        onclick="get(this.value);"
+      />
+      <input
+        type="button"
+        class="btn operator"
+        value="*"
+        onclick="get(this.value);"
+      />
+      <br />
+      <input
+        type="button"
+        class="btn number"
+        value="1"
+        onclick="get(this.value);"
+      />
+      <input
+        type="button"
+        class="btn number"
+        value="2"
+        onclick="get(this.value);"
+      />
+      <input
+        type="button"
+        class="btn number"
+        value="3"
+        onclick="get(this.value);"
+      />
+      <input
+        type="button"
+        class="btn operator"
+        value="-"
+        onclick="get(this.value);"
+      />
+      <br />
+      <input
+        type="button"
+        class="btn number"
+        value="0"
+        onclick="get(this.value);"
+      />
+      <input
+        type="button"
+        class="btn operator"
+        value="."
+        onclick="get(this.value);"
+      />
+      <input
+        type="button"
+        class="btn operator"
+        value="/"
+        onclick="get(this.value);"
+      />
+      <input type="button" class="btn other" id="cal" value="=" />
+    </form>
+    <p align="center" id="time"></p>
+    <p>Created by Grace Chen 👩🏻‍💻</p>
 
-<body>
-  <h1>HTML, CSS, Javascript Calculator</h1>
-  <form>
-    <input type="button" id="clear" class="btn other" value="C">
-    <input type="button" id="delete" class="btn other" value="D">
-    <input type="text" id="display">
-    <br>
-    <input type="button" class="btn number" value="7" onclick="get(this.value);">
-    <input type="button" class="btn number" value="8" onclick="get(this.value);">
-    <input type="button" class="btn number" value="9" onclick="get(this.value);">
-    <input type="button" class="btn operator" value="+" onclick="get(this.value);">
-    <br>
-    <input type="button" class="btn number" value="4" onclick="get(this.value);">
-    <input type="button" class="btn number" value="5" onclick="get(this.value);">
-    <input type="button" class="btn number" value="6" onclick="get(this.value);">
-    <input type="button" class="btn operator" value="*" onclick="get(this.value);">
-    <br>
-    <input type="button" class="btn number" value="1" onclick="get(this.value);">
-    <input type="button" class="btn number" value="2" onclick="get(this.value);">
-    <input type="button" class="btn number" value="3" onclick="get(this.value);">
-    <input type="button" class="btn operator" value="-" onclick="get(this.value);">
-    <br>
-    <input type="button" class="btn number" value="0" onclick="get(this.value);">
-    <input type="button" class="btn operator" value="." onclick="get(this.value);">
-    <input type="button" class="btn operator" value="/" onclick="get(this.value);">
-    <input type="button" class="btn other" id="cal" value="=">
-  </form>
-  <p align="center" id="time"></p>
-  
-  <script src="scripts.js"></script>
-</body>
-
+    <script src="scripts.js"></script>
+  </body>
 </html>
